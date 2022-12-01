@@ -10,10 +10,12 @@
 
 .highscore {
     text-align: left;
+    font-size: large;
 }
 
 .clock {
     text-align: right;
+    font-size: large;
 }
 
 .start-class {
@@ -22,10 +24,22 @@
 
 .footer {
     text-align: center;
+    font-size: x-large;
     padding: 100px;
-    font-style: italic;
-    font-size:x-large;
 }
+
+a {
+    box-shadow: inset 0 0 0 0 #54b3d6;
+    color: #54b3d6;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+a:hover {
+    box-shadow: inset 100px 0px 0px 50px #54b3d6;
+    color: white;
+  }
 
 /*This section is for the buttons*/
 
