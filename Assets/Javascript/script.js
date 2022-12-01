@@ -70,7 +70,8 @@ function beginQuiz () {
 //Timer//
 
 function timeLeft () {
-    
+    totalTime--;
+    timer.textContent = totalTime;
 
 }
 
