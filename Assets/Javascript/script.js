@@ -36,5 +36,24 @@ var questionnaire = [
     questionoptions: ["@", "#", "*", "//"],
     correctanswer: "//" 
 },
-]
+];
+
+//DOM//
+
+const timer = document.getElementById("clocks");
+const startBtn = document.getElementById("start-button");
+const questionsQuiz = document.getElementById("quizquestion");
+const options = document.getElementById("questionoptions");
+const submitBtn = document.getElementById("submit-score");
+const initials = document.getElementById("initials");
+
+
+
+
+
+
+
+ 
+
+
 
