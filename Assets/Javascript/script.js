@@ -47,6 +47,18 @@ const options = document.getElementById("questionoptions");
 const submitBtn = document.getElementById("submit-score");
 const initials = document.getElementById("initials");
 
+//Start Quiz//
+
+function beginQuiz () {
+
+    const afterStart = document.getElementById("start-game");
+    afterStart.setAttribute("class", "remove");
+    
+}
+
+//Start Button Funcionality//
+startBtn.onclick = beginQuiz;
+
 
 
 
