@@ -38,6 +38,8 @@ var questionnaire = [
 },
 ];
 
+
+
 //DOM//
 
 const timer = document.getElementById("clocks");
@@ -49,15 +51,28 @@ const initials = document.getElementById("initials");
 
 //Start Quiz//
 
+var timeCount;
+var totalTime = questionnaire.length * 10;
+
+startBtn.onclick = beginQuiz;
+
 function beginQuiz () {
 
     const afterStart = document.getElementById("start-game");
     afterStart.setAttribute("class", "remove");
-    
+
+    timeCount = setInterval(timeLeft, 1000);
+
+    timer.textContent = totalTime;
+
 }
 
-//Start Button Funcionality//
-startBtn.onclick = beginQuiz;
+//Timer//
+
+function timeLeft () {
+    
+
+}
 
 
 
