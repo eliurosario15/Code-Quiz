@@ -14,27 +14,27 @@ var questionnaire = [
 },
 
 {
-    quizquestion:"",
-    questionoptions: [],
-    correctanswer: "" 
+    quizquestion: "When an operator’s value is NULL, the typeof returned by the unary operator is:",
+    questionoptions: ["Boolean", "Undefined", "Object", "Intenger"],
+    correctanswer: "Object" 
 },
 
 {
-    quizquestion:"",
-    questionoptions: [],
-    correctanswer: "" 
+    quizquestion:"How can you stop an interval timer in Javascript?",
+    questionoptions: ["Stop", "Return", "ConsoleLog", "Async"],
+    correctanswer: "Async" 
 },
 
 {
-    quizquestion:"",
-    questionoptions: [],
-    correctanswer: "" 
+    quizquestion: "What is … in JS?",
+    questionoptions: ["Nothing", "A string", "Adds to an Array", "Spead operator"],
+    correctanswer: "Spread Operator" 
 },
 
 {
-    quizquestion:"",
-    questionoptions: [],
-    correctanswer: "" 
+    quizquestion:"How do we write a comment in javascript?",
+    questionoptions: ["@", "#", "*", "//"],
+    correctanswer: "//" 
 },
 ]
 

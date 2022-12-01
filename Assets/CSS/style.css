@@ -10,12 +10,14 @@
 
 .highscore {
     text-align: left;
-    font-size: large;
+    font-size: x-large;
+    padding-left: 100px;
 }
 
 .clock {
     text-align: right;
-    font-size: large;
+    font-size: x-large;
+    padding-right: 100px;
 }
 
 .start-class {
