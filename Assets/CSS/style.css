@@ -1,5 +1,27 @@
-.Body {
+.body {
     font-family: 'Font Name', serif;
     }
+
+/*This removes the Questions and Scores input during the Quiz*/    
+.remove {
+    display: none;
+}
+
+.highscore {
+    text-align: left;
+}
+
+.clock {
+    text-align: right;
+}
+
+.start-class {
+    text-align: center;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+}
 
     
