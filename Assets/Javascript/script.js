@@ -44,13 +44,14 @@ var questionnaire = [
 
 const timer = document.getElementById("clocks");
 const startBtn = document.getElementById("start-button");
-const questionsQuiz = document.getElementById("quizquestion");
-const options = document.getElementById("questionoptions");
+const questionsQuiz = document.getElementById("random-question");
+const answers = document.getElementById("answernoptions");
 const submitBtn = document.getElementById("submit-score");
 const initials = document.getElementById("initials");
 
 //Start Quiz//
 
+const initialQuestion = 0;
 var timeCount;
 var totalTime = questionnaire.length * 10;
 
@@ -65,6 +66,7 @@ function beginQuiz () {
 
     timer.textContent = totalTime;
 
+    displayQuestions ();
 }
 
 //Timer//
@@ -74,6 +76,12 @@ function timeLeft () {
     timer.textContent = totalTime;
 
 }
+
+//Display Quiz questions// 
+
+    
+
+
 
 
 

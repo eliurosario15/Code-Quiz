@@ -8,6 +8,11 @@
     display: none;
 }
 
+.h3 {
+    display: block;
+    color: black;
+}
+
 .highscore {
     text-align: left;
     font-size: x-large;
@@ -85,5 +90,11 @@ a:hover {
         right: 0;
       }
 
+
+
+
+
+
+      
 
     
