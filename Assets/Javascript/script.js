@@ -62,6 +62,20 @@ var score = 0;
 var highScores = [];
 let i = 0;
 
+//Timer
+
+var countDown = setInterval(countdownTime, 1000);
+
+function countdownTime () {
+    if (timeStart)
+    time --;
+    if (time <=0) {
+        endGame();
+        time = 0;
+    }
+    document.getElementById("clocks").innerHTML = time;
+}
+
 
 
 
