@@ -55,38 +55,15 @@ const Answer2 = document.getElementById("options-2");
 const Answer3 = document.getElementById("options-3");
 const Answer4 = document.getElementById("options-4");
 const correct = document.getElementById ("answer-correct");
+var time = 60;
+var timeLeft = true;
+var timeStart = false;
+var score = 0;
+var highScores = [];
+let i = 0;
 
 
 
-//Start Quiz//
-
-const initialQuestion = 0;
-var timeCount;
-var totalTime = questionnaire.length * 10;
-
-startBtn.onclick = beginQuiz;
-
-function beginQuiz () {
-
-    const afterStart = document.getElementById("start-game");
-    afterStart.setAttribute("class", "remove");
-
-    timeCount = setInterval(timeLeft, 1000);
-
-    timer.textContent = totalTime;
-
-    displayQuestions ();
-}
-
-//Timer//
-
-function timeLeft () {
-    totalTime--;
-    timer.textContent = totalTime;
-
-}
-
-//Display Quiz questions// 
 
     
 
