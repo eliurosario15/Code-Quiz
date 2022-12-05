@@ -82,6 +82,8 @@ function countdownTime () {
 startBtn.addEventListener("click", function() {
     quizBox.setAttribute("class", "show");
     homeScreen.setAttribute("class", "remove")
+    countdownTime();
+    timeStart = true;
 });
 
 
