@@ -48,6 +48,15 @@ const questionsQuiz = document.getElementById("random-question");
 const answers = document.getElementById("answernoptions");
 const submitBtn = document.getElementById("submit-score");
 const initials = document.getElementById("initials");
+const quizBox = document.getElementById("questionBox");
+const questionTitle = document.getElementById("quizQuestion");
+const Answer1 = document.getElementById("options-1");
+const Answer2 = document.getElementById("options-2");
+const Answer3 = document.getElementById("options-3");
+const Answer4 = document.getElementById("options-4");
+const correct = document.getElementById ("answer-correct");
+
+
 
 //Start Quiz//
 
