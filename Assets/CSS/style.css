@@ -8,6 +8,10 @@
     display: none;
 }
 
+.show {
+    display: block;
+}
+
 .h3 {
     display: block;
     color: black;

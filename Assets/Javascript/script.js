@@ -55,6 +55,7 @@ const Answer2 = document.getElementById("options-2");
 const Answer3 = document.getElementById("options-3");
 const Answer4 = document.getElementById("options-4");
 const correct = document.getElementById ("answer-correct");
+const homeScreen = document.getElementById("start-game");
 var time = 60;
 var timeLeft = true;
 var timeStart = false;
@@ -75,6 +76,18 @@ function countdownTime () {
     }
     document.getElementById("clocks").innerHTML = time;
 }
+
+//Start quiz//
+
+startBtn.addEventListener("click", function() {
+    quizBox.setAttribute("class", "show");
+    homeScreen.setAttribute("class", "remove")
+});
+
+
+
+
+
 
 
 
