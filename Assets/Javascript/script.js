@@ -58,6 +58,7 @@ const Answer5 = document.getElementById("options-5");
 const Answer6 = document.getElementById("options-6");
 const correct = document.getElementById ("answer-correct");
 const homeScreen = document.getElementById("start-game");
+const foot = document.getElementById("footer");
 var time = 60;
 var timeLeft = true;
 var timeStart = false;
@@ -73,7 +74,6 @@ function countdownTime () {
     if (timeStart)
     time --;
     if (time <=0) {
-        endGame();
         time = 0;
     }
     document.getElementById("clocks").innerHTML = time;
@@ -83,13 +83,17 @@ function countdownTime () {
 
 startBtn.addEventListener("click", function() {
     quizBox.style.display = "block";
-    homeScreen.setAttribute("class", "remove")
-    
+    homeScreen.style.display = "none";
+
     countdownTime();;
     timeStart = true;
 });
 
-//Start Quiz
+function displayQuestion (n) {
+    
+}
+
+
 
 
 
