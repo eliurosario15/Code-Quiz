@@ -1,6 +1,7 @@
 .body {
     font-family: 'Merriweather', serif;
     font-family: 'Rubik', sans-serif;
+    text-align: center;
     }
 
 /*This removes the Questions and Scores input during the Quiz*/    

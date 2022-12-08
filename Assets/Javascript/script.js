@@ -49,11 +49,13 @@ const answers = document.getElementById("answernoptions");
 const submitBtn = document.getElementById("submit-score");
 const initials = document.getElementById("initials");
 const quizBox = document.getElementById("questionBox");
-const questionTitle = document.getElementById("quizQuestion");
+const questionTitle = document.getElementById("quizuestion");
 const Answer1 = document.getElementById("options-1");
 const Answer2 = document.getElementById("options-2");
 const Answer3 = document.getElementById("options-3");
 const Answer4 = document.getElementById("options-4");
+const Answer5 = document.getElementById("options-5");
+const Answer6 = document.getElementById("options-6");
 const correct = document.getElementById ("answer-correct");
 const homeScreen = document.getElementById("start-game");
 var time = 60;
@@ -80,11 +82,17 @@ function countdownTime () {
 //Start quiz//
 
 startBtn.addEventListener("click", function() {
-    quizBox.setAttribute("class", "show");
+    quizBox.style.display = "block";
     homeScreen.setAttribute("class", "remove")
-    countdownTime();
+    
+    countdownTime();;
     timeStart = true;
 });
+
+//Start Quiz
+
+
+
 
 
 
