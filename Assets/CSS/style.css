@@ -4,19 +4,6 @@
     text-align: center;
     }
 
-/*This removes the Questions and Scores input during the Quiz*/    
-.remove {
-    display: none;
-}
-
-.show {
-    display: block;
-}
-
-.h3 {
-    display: block;
-    color: black;
-}
 
 .highscore {
     text-align: left;
@@ -34,10 +21,17 @@
     text-align: center;
 }
 
+ul {
+  list-style-type: none;
+  text-align: center;
+  padding: 100px;
+}
+
 .footer {
     text-align: center;
     font-size: x-large;
     padding: 100px;
+    display: block;
 }
 
 a {
@@ -94,6 +88,11 @@ a:hover {
         opacity: 1;
         right: 0;
       }
+
+#questionBox, .sendScore, #quizResponse {
+  display: none;
+}
+
 
 
 
