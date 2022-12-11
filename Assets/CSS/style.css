@@ -21,10 +21,35 @@
     text-align: center;
 }
 
+.main {
+  text-align: center;
+  display: block;
+}
+
+#h2 {
+  display: block;
+}
+
+.remove {
+  display: none;
+}
+
+.response {
+  font-size: x-large;
+  color: black;
+}
+
+.question {
+  display: block;
+}
+
 ul {
   list-style-type: none;
   text-align: center;
   padding: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  
 }
 
 .footer {

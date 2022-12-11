@@ -42,56 +42,7 @@ var questionnaire = [
 
 //DOM//
 
-const timer = document.getElementById("clocks");
-const startBtn = document.getElementById("start-button");
-const questionsQuiz = document.getElementById("random-question");
-const answers = document.getElementById("answernoptions");
-const submitBtn = document.getElementById("submit-score");
-const initials = document.getElementById("initials");
-const quizBox = document.getElementById("questionBox");
-const questionTitle = document.getElementById("quizuestion");
-const Answer1 = document.getElementById("options-1");
-const Answer2 = document.getElementById("options-2");
-const Answer3 = document.getElementById("options-3");
-const Answer4 = document.getElementById("options-4");
-const Answer5 = document.getElementById("options-5");
-const Answer6 = document.getElementById("options-6");
-const correct = document.getElementById ("answer-correct");
-const homeScreen = document.getElementById("start-game");
-const foot = document.getElementById("footer");
-var time = 60;
-var timeLeft = true;
-var timeStart = false;
-var score = 0;
-var highScores = [];
-let i = 0;
 
-//Timer
-
-var countDown = setInterval(countdownTime, 1000);
-
-function countdownTime () {
-    if (timeStart)
-    time --;
-    if (time <=0) {
-        time = 0;
-    }
-    document.getElementById("clocks").innerHTML = time;
-}
-
-//Start quiz//
-
-startBtn.addEventListener("click", function() {
-    quizBox.style.display = "block";
-    homeScreen.style.display = "none";
-
-    countdownTime();;
-    timeStart = true;
-});
-
-function displayQuestion (n) {
-    
-}
 
 
 
