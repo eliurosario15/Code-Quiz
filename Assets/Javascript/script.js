@@ -42,6 +42,19 @@ var questionnaire = [
 
 //DOM//
 
+const quizBox = document.getElementById("questionBox");
+const countDown = document.getElementById("clock");
+const answers = document.getElementById("answersOP");
+const submitScore  = document.getElementById("submit-score");
+const beginQuiz = document.getElementById("start-button");
+const response = document.getElementById("quizResponse");
+const scoreInitials  = document.getElementById("initials");
+
+var time = 60,
+
+
+
+
 
 
 
