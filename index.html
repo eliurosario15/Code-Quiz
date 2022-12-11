@@ -15,29 +15,29 @@
   <body>
 <section class = "highscore"> Highscores: </section>
 
-<section class = "clock">Time Left: <span id = "clocks"></span></section>
+<section class = "clock">Time Left: <span id = "clock"></span></section>
 
 <div class = "first-screen">
-<div id = "start-game" class = "start-class">
+<div id = "startQuiz" class = "start-class">
 <h1>Welcome to the ultimate coding quiz!</h1>
 <h3>Click the start button to begin your learning journey</h3>
 <button id = "start-button" class = "start-button"><span>Start</span></button>
 </div>
 
 <!--Questions Section-->
-<main id="questionBox" class ="main">
+<div id="questionBox" class ="remove">
 <h2 id = "quiz-question"></h2>
-    <div id = "answersOp" class="remove">
+    <div id = "answer-options" class="start-option">
 
     </div>
-</main>
+</div>
 
 
 <div id="quizResponse" class="response">
 </div>
 
 
-<div id = "quiz-done" class = "sendScore">
+<div id = "quiz-done" class = "remove">
     <h2>Good job!</h2>
     <p>You got <span id = "score"></span> points!</p>
     <p>Enter your initials: <input type = "text" id = "initials"></p>

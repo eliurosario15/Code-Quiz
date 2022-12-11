@@ -21,15 +21,6 @@
     text-align: center;
 }
 
-.main {
-  text-align: center;
-  display: block;
-}
-
-#h2 {
-  display: block;
-}
-
 .remove {
   display: none;
 }
@@ -39,19 +30,6 @@
   color: black;
 }
 
-.question {
-  display: block;
-}
-
-ul {
-  list-style-type: none;
-  text-align: center;
-  padding: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  
-}
-
 .footer {
     text-align: center;
     font-size: x-large;
@@ -59,18 +37,6 @@ ul {
     display: block;
 }
 
-a {
-    box-shadow: inset 0 0 0 0 #54b3d6;
-    color: #54b3d6;
-    margin: 0 -.25rem;
-    padding: 0 .25rem;
-    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
-}
-
-a:hover {
-    box-shadow: inset 100px 0px 0px 50px #54b3d6;
-    color: white;
-  }
 
 /*This section is for the buttons*/
 
@@ -114,9 +80,68 @@ a:hover {
         right: 0;
       }
 
-#questionBox, .sendScore, #quizResponse {
-  display: none;
-}
+      
+      .option-button {
+        appearance: button;
+        background-color: #43606d;
+        border: solid transparent;
+        border-radius: 16px;
+        border-width: 0 0 4px;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-block;
+        font-family: din-round,sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: .8px;
+        line-height: 20px;
+        margin: 0;
+        outline: none;
+        overflow: visible;
+        padding: 13px 16px;
+        text-align: center;
+        text-transform: uppercase;
+        touch-action: manipulation;
+        transform: translateZ(0);
+        transition: filter .2s;
+        user-select: none;
+        -webkit-user-select: none;
+        vertical-align: middle;
+        white-space: nowrap;
+        width: 100%;
+      }
+      
+      .option-button:after {
+        background-clip: padding-box;
+        background-color: #43606d;
+        border: solid transparent;
+        border-radius: 16px;
+        border-width: 0 0 4px;
+        bottom: -4px;
+        content: "";
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: -1;
+      }
+      
+      .option-button:main,
+      .button-19:focus {
+        user-select: auto;
+      }
+      
+      .option-button:hover:not(:disabled) {
+        filter: brightness(1.1);
+        -webkit-filter: brightness(1.1);
+      }
+      
+      .option-button:disabled {
+        cursor: auto;
+      }
+
+
 
 
 
