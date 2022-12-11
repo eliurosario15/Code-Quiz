@@ -118,7 +118,23 @@ function optionsButton () {
            } else {
             response.textContent = "Incorrect!"
            }
+
+           currentQuestion++;
+
+    if (currentQuestion === questionnaire.length) {
+        End ();
+    } else {
+        fetchQuestion ();
+    }      
 }
+
+function End () {
+    clearInterval(timeIndex);
+}
+
+
+
+
 
 
 
