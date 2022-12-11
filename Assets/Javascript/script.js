@@ -98,11 +98,26 @@ function fetchQuestion () {
 
         createButton.textContent = i + 1 + ". " + options;
 
-        //createButton.onclick = optionsButton;
+        createButton.onclick = optionsButton;
 
         answers.appendChild(createButton);
 
     });
+}
+
+function optionsButton () {
+    if (this.value !== questionnaire[currentQuestion].correctanswer) {
+        time -= 10;
+
+        if (time < 0) {
+            time =0;
+        }
+    }
+    if (this.value === questionnaire[currentQuestion].correctanswer) {
+        response.textContent = "Correct!";
+           } else {
+            response.textContent = "Incorrect!"
+           }
 }
 
 
