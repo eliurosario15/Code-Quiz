@@ -49,9 +49,11 @@ const submitScore  = document.getElementById("submit-score");
 const beginQuiz = document.getElementById("start-button");
 const response = document.getElementById("quizResponse");
 const scoreInitials  = document.getElementById("initials");
+const backtoStart = document.getElementById("back");
 
 var time = 60;
 var currentQuestion = 0;
+var highScores  = [];
 
 //Timer
 var timeIndex;
@@ -59,6 +61,10 @@ var timeIndex;
 function timeQuiz () {
 time --;
 countDown.textContent = time;
+
+if (time <= 0) {
+    End();
+}
 }
 
 //Start Questionnaire
@@ -130,7 +136,44 @@ function optionsButton () {
 
 function End () {
     clearInterval(timeIndex);
+    
+    var endQuiz = document.getElementById("quiz-done");
+    endQuiz.removeAttribute("class");
+
+    quizBox.style.display = "none";
+
+
+    var finalScore = document.getElementById("score");
+    finalScore.textContent = time;
+    
 }
+
+//Save Score
+
+submitScore.onclick = sendScore
+
+function sendScore (event) {
+event.preventDefault();
+
+var initialsInput = scoreInitials.value.trim();
+
+finalScore = {
+    score: time,
+    scoreInitials: initialsInput,
+};
+
+highScores.push(finalScore);
+localStorage.setItem("highScores", JSON.stringify(highScores));
+
+}
+
+backtoStart.onclick = reload;
+
+function reload() {
+    window.location.href = "index.html";
+}
+
+
 
 
 

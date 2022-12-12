@@ -142,6 +142,26 @@
         cursor: auto;
       }
 
+.finalScore {
+text-align: center;
+font-size: x-large;
+}
+
+.score-button {
+  display: block;
+  border-radius: 4px;
+  background-color: #43606d;
+  border:#43606d;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
 
 
 
