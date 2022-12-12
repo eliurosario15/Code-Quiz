@@ -157,13 +157,13 @@ event.preventDefault();
 
 var initialsInput = scoreInitials.value.trim();
 
-finalScore = {
+var finalScore = {
     score: time,
     scoreInitials: initialsInput,
 };
 
 highScores.push(finalScore);
-localStorage.setItem("highScores", JSON.stringify(highScores));
+localStorage.setItem("history-score", JSON.stringify(highScores));
 
 }
 
